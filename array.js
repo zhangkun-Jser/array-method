@@ -12,12 +12,16 @@ function deleteRepeat(arr) {
 function random(min, max) {
   return [0, 0, 0, 0].map(() => Math.floor(Math.random() * (max - min + 1) + min))
 }
-//
-function a(a, b) {
+//数组交叉项
+function noRepeat(a, b) {
   let c = []
-  for (let i of a) {
-    if (b.indexOf(i) != -1) {
-      c.push(i)
+  var j = 0;
+  for (var i = 0; i < a.length; i++) {
+    for (var k = 0; k < b.length; k++) {
+      if (a[i] == b[k]) {
+        c[j] = a[i];
+        ++j;
+      }
     }
   }
   return c
