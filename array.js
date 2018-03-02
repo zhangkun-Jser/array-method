@@ -26,3 +26,12 @@ function noRepeat(a, b) {
   }
   return c
 }
+//找出数组最大项
+var ary = [1,25,16,32,43,26,13,28,19];
+// 1、 for循环遍历，比较low，就不写了
+// 2、 数组排序
+ary.sort()[ary.length-1];
+// 3、数组排序+截取
+ary.sort().splice(-1)[0];
+// 4、借用Math最大值方法
+Math.max.apply(null,ary);
