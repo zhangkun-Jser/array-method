@@ -30,15 +30,15 @@ function noRepeat(a, b) {
 }
 
 //4,找出数组最大项
-var ary = [1, 25, 16, 32, 43, 26, 13, 28, 19];
-// for循环遍历，比较low，就不写了
+let arr4 = [1, 25, 16, 32, 43, 26, 13, 28, 19];
+// for循环遍历arr4，比较low，就不写了
 // 数组排序+截取
-ary.sort().splice(-1)[0];
+arr4.sort().splice(-1)[0];
 // 借用Math最大值方法
-Math.max.apply(null, ary);
+Math.max.apply(null, arr4);
 
 //5,归并排序实现多个有序数组合并为一个数组
-let arr = [[1, 2], [0, 3, 4, 4, 4, 6, 7, 8, 9, 10], [-1, 4], [-1, 3], [-1], [100, 200], [5, 1000, 30000]];
+let arr5 = [[1, 2], [0, 3, 4, 4, 4, 6, 7, 8, 9, 10], [-1, 4], [-1, 3], [-1], [100, 200], [5, 1000, 30000]];
 // let arr= [[1,2,3]];
 
 function merge(arr) {
@@ -101,5 +101,5 @@ function merge(arr) {
     return ret;
 }
 
-let ret = merge(arr);
+let ret = merge(arr5);
 console.log(ret);
