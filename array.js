@@ -39,7 +39,6 @@ Math.max.apply(null, arr4);
 
 //5,归并排序实现多个有序数组合并为一个数组
 let arr5 = [[1, 2], [0, 3, 4, 4, 4, 6, 7, 8, 9, 10], [-1, 4], [-1, 3], [-1], [100, 200], [5, 1000, 30000]];
-// let arr= [[1,2,3]];
 
 function merge(arr) {
 
@@ -101,5 +100,4 @@ function merge(arr) {
     return ret;
 }
 
-let ret = merge(arr5);
-console.log(ret);
+console.log(merge(arr5));

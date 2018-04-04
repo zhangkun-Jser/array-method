@@ -73,7 +73,7 @@ function findMost4(arr) {
     var obj = {};
     var maxEle;
     var maxNum = 1;
-    arr.join('').replace(/(\w)/g, function(word, p){
+    arr.join('').replace(/(\w)/g, function (word, p) {
         obj[p[0]] ? obj[p[0]] += 1 : obj[p[0]] = 1;
         if (obj[p[0]] > maxNum) {
             maxEle = p[0];
